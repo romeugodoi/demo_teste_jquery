@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <!-- Actions -->
+      <trans-unit id="1">
+        <source>New</source>
+        <target>Novo</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Show</source>
+        <target>Visualizar</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Delete</source>
+        <target>Remover</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>List</source>
+        <target>Listar</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Save</source>
+        <target>Salvar</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Save and add</source>
+        <target>Salvar e Adicionar outro</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Cancel</source>
+        <target>Cancelar</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Choose an action</source>
+        <target>Escolha uma opção</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>go</source>
+        <target>Executar</target>
+      </trans-unit>
+
+      <!-- Filters -->
+      <trans-unit id="11">
+        <source>Reset</source>
+        <target>Limpar</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Filter</source>
+        <target>Filtro</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Filters</source>
+        <target>Filtros</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Back to list</source>
+        <target>Voltar a lista</target>
+      </trans-unit>
+
+      <!-- List -->
+      <trans-unit id="15">
+        <source>No result</source>
+        <target>Nenhum resultado.</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Actions</source>
+        <target>Ações</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>(page %%page%%/%%nb_pages%%)</source>
+        <target>(página %%page%%/%%nb_pages%%)</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>asc</source>
+        <target>asc</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>desc</source>
+        <target>desc</target>
+      </trans-unit>
+
+      <!-- Pagination -->
+      <trans-unit id="20">
+        <source>First page</source>
+        <target>Primeira página</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Previous page</source>
+        <target>Página anterior</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Next page</source>
+        <target>Próxima página</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Last page</source>
+        <target>Última página</target>
+      </trans-unit>
+
+      <!-- Form -->
+      <trans-unit id="24">
+        <source>The item was created successfully.</source>
+        <target>Item adicionado com sucesso.</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>The item was updated successfully.</source>
+        <target>Item atualizado com sucesso.</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>The item was created successfully. You can add another one below.</source>
+        <target>Item adicionado com sucesso. Você pode adicionar outro abaixo.</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>The item was updated successfully. You can add another one below.</source>
+        <target>Item atualizado com sucesso. Você pode adicionar outro abaixo.</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>The item has not been saved due to some errors.</source>
+        <target>Item não atualizado devido a erros.</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>The item was deleted successfully.</source>
+        <target>Item removido com sucesso.</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>The item was deleted successfully.</source>
+        <target>Ítem excluído com sucesso.</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>You must at least select one item.</source>
+        <target>Você deve selecionar pelo menos um ítem.</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>You must select an action to execute on the selected items.</source>
+        <target>Você deve selecionar uma ação a ser executada nos ítens selecionados.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>A problem occurs when deleting the selected items as some items do not exist anymore.</source>
+        <target>Ocorreu um problema ao excluir os ítens selecionados pois alguns deles não existem mais.</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>The selected items have been deleted successfully.</source>
+        <target>Os ítens selecionados foram excluídos com sucesso.</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>A problem occurs when deleting the selected items.</source>
+        <target>Ocorreu um problema ao excluir os ítens selecionados.</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Are you sure?</source>
+        <target>Você está certo disso?</target>
+      </trans-unit>
+
+      <trans-unit id="37">
+        <source>%%field%%: "%%value%%" is too long (%%max_length%% characters max).</source>
+        <target>%%field%%: "%%value%%" é muito grande (o tamanho máximo é %%max_length%%).</target>
+      </trans-unit>
+	  
+	  
+    </body>
+  </file>
+</xliff>

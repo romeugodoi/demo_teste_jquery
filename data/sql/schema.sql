@@ -1,0 +1,13 @@
+CREATE TABLE endereco (id INT AUTO_INCREMENT, tipo_endereco_id INT NOT NULL, endereco VARCHAR(150) NOT NULL, cidade VARCHAR(60) NOT NULL, uf VARCHAR(2) NOT NULL, cep VARCHAR(9) NOT NULL, INDEX tipo_endereco_id_idx (tipo_endereco_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE pessoa (id INT AUTO_INCREMENT, nome VARCHAR(100) NOT NULL, email VARCHAR(100), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE pessoa_endereco (id INT AUTO_INCREMENT, pessoa_id INT NOT NULL, endereco_id INT NOT NULL, INDEX pessoa_id_idx (pessoa_id), INDEX endereco_id_idx (endereco_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE pessoa_telefone (id INT AUTO_INCREMENT, pessoa_id INT NOT NULL, telefone_id INT NOT NULL, INDEX pessoa_id_idx (pessoa_id), INDEX telefone_id_idx (telefone_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE telefone (id INT AUTO_INCREMENT, tipo_telefone_id INT NOT NULL, ddd CHAR(2) NOT NULL, numero CHAR(9) NOT NULL, INDEX tipo_telefone_id_idx (tipo_telefone_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE tipo_endereco (id INT AUTO_INCREMENT, nome VARCHAR(45) NOT NULL, descricao TEXT, PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE tipo_telefone (id INT AUTO_INCREMENT, nome VARCHAR(45) NOT NULL, descricao TEXT, PRIMARY KEY(id)) ENGINE = INNODB;
+ALTER TABLE endereco ADD CONSTRAINT endereco_tipo_endereco_id_tipo_endereco_id FOREIGN KEY (tipo_endereco_id) REFERENCES tipo_endereco(id) ON DELETE CASCADE;
+ALTER TABLE pessoa_endereco ADD CONSTRAINT pessoa_endereco_pessoa_id_pessoa_id FOREIGN KEY (pessoa_id) REFERENCES pessoa(id) ON DELETE CASCADE;
+ALTER TABLE pessoa_endereco ADD CONSTRAINT pessoa_endereco_endereco_id_endereco_id FOREIGN KEY (endereco_id) REFERENCES endereco(id) ON DELETE CASCADE;
+ALTER TABLE pessoa_telefone ADD CONSTRAINT pessoa_telefone_telefone_id_telefone_id FOREIGN KEY (telefone_id) REFERENCES telefone(id) ON DELETE CASCADE;
+ALTER TABLE pessoa_telefone ADD CONSTRAINT pessoa_telefone_pessoa_id_pessoa_id FOREIGN KEY (pessoa_id) REFERENCES pessoa(id) ON DELETE CASCADE;
+ALTER TABLE telefone ADD CONSTRAINT telefone_tipo_telefone_id_tipo_telefone_id FOREIGN KEY (tipo_telefone_id) REFERENCES tipo_telefone(id) ON DELETE CASCADE;

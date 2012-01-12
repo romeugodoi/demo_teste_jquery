@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit id="1">
+        <source>Filters</source>
+        <target>Filtros</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>is empty</source>
+        <target>vazio</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>yes or no</source>
+        <target>sim ou não</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>yes</source>
+        <target>sim</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>no</source>
+        <target>não</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>View %1% - %2% of %3%</source>
+        <target>Visualizando %1% - %2% de %3%</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source><![CDATA[from %from_date% to %to_date%]]></source>
+        <target><![CDATA[de %from_date% até %to_date%]]></target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source><![CDATA[from %from_date%<br />to %to_date%]]></source>
+        <target><![CDATA[de %from_date%<br />até %to_date%]]></target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Actions</source>
+        <target>Ações</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Created at</source>
+        <target>Criado em</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Updated at</source>
+        <target>Modificado em</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Name</source>
+        <target>Nome</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Descricao</source>
+        <target>Descrição</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Required.</source>
+        <target>Obrigatório.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Username</source>
+        <target>Usuário</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Password</source>
+        <target>Senha</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Remember</source>
+        <target>Lembrar login</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>sign in</source>
+        <target>Entrar</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Forgot your password?</source>
+        <target>Esqueceu sua senha?</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Invalid.</source>
+        <target>Inválido.</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>remove the current file</source>
+        <target>Deletar o arquivo atual</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Website Temporarily Unavailable</source>
+        <target>Sistema Temporariamente Indisponível</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Please try again in a few seconds</source>
+        <target>Por favor, tente novamente em alguns segundos</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>What's next</source>
+        <target>Próximo passo</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Try again: Reload Page</source>
+        <target>Tente novamente: Atualizar a Página</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source><![CDATA[<span class="from">from </span>%from%<span class="to"> to </span>%to%]]></source>
+        <target><![CDATA[<span class="from">de </span>%from%<span class="to"> até </span>%to%]]></target>
+      </trans-unit>
+
+      <trans-unit id="27">
+        <source>%%field%%: "%%value%%" is too long (%%max_length%% characters max).</source>
+        <target>%%field%%: "%%value%%" é muito grande (o tamanho máximo é %%max_length%%).</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

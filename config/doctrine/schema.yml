@@ -1,0 +1,202 @@
+Endereco:
+  connection: doctrine
+  tableName: endereco
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    tipo_endereco_id:
+      type: integer(4)
+      notnull: true
+    endereco:
+      type: string(150)
+      notnull: true
+    cidade:
+      type: string(60)
+      notnull: true
+    uf:
+      type: string(2)
+      notnull: true
+    cep:
+      type: string(9)
+      notnull: true
+  options:
+    symfony:
+      filter: false
+  relations:
+    TipoEndereco:
+      local: tipo_endereco_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    PessoaEndereco:
+      local: id
+      foreign: endereco_id
+      type: many
+      onDelete: CASCADE
+Pessoa:
+  connection: doctrine
+  tableName: pessoa
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nome:
+      type: string(100)
+      notnull: true
+    email:
+      type: string(100)
+      notnull: false
+  options:
+    symfony:
+      filter: false
+  relations:
+    Enderecos:
+      class: Endereco
+      refClass: PessoaEndereco
+      local: pessoa_id
+      foreign: endereco_id
+      type: many
+    Telefones:
+      class: Telefone
+      refClass: PessoaTelefone
+      local: pessoa_id
+      foreign: telefone_id
+      type: many
+PessoaEndereco:
+  connection: doctrine
+  tableName: pessoa_endereco
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    pessoa_id:
+      type: integer(4)
+      notnull: true
+    endereco_id:
+      type: integer(4)
+      notnull: true
+  options:
+    symfony:
+      form:   false
+      filter: false
+  relations:
+    Pessoa:
+      local: pessoa_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    Endereco:
+      local: endereco_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+PessoaTelefone:
+  connection: doctrine
+  tableName: pessoa_telefone
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    pessoa_id:
+      type: integer(4)
+      notnull: true
+    telefone_id:
+      type: integer(4)
+      notnull: true
+  options:
+    symfony:
+      form:   false
+      filter: false
+  relations:
+    Pessoa:
+      local: pessoa_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    Telefone:
+      local: telefone_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+Telefone:
+  connection: doctrine
+  tableName: telefone
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    tipo_telefone_id:
+      type: integer(4)
+      notnull: true
+    ddd:
+      type: string(2)
+      fixed: true
+      notnull: true
+    numero:
+      type: string(9)
+      fixed: true
+      notnull: true
+  options:
+    symfony:
+      filter: false
+  relations:
+    TipoTelefone:
+      local: tipo_telefone_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    PessoaTelefone:
+      local: id
+      foreign: telefone_id
+      type: many
+      onDelete: CASCADE
+TipoEndereco:
+  connection: doctrine
+  tableName: tipo_endereco
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nome:
+      type: string(45)
+      notnull: true
+    descricao:
+      type: string(1000)
+      notnull: false
+  options:
+    symfony:
+      filter: false
+  relations:
+    Endereco:
+      local: id
+      foreign: tipo_endereco_id
+      type: many
+TipoTelefone:
+  connection: doctrine
+  tableName: tipo_telefone
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nome:
+      type: string(45)
+      notnull: true
+    descricao:
+      type: string(1000)
+      notnull: false
+  options:
+    symfony:
+      filter: false
+  relations:
+    Telefone:
+      local: id
+      foreign: tipo_telefone_id
+      type: many
